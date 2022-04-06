@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReduxDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbK-5n-8E0">
+                                <rect key="frame" x="30" y="432.5" width="90" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rock"/>
+                                <connections>
+                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiH-kY-Rdv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8va-YR-LzN">
+                                <rect key="frame" x="294" y="432.5" width="90" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Scissor"/>
+                                <connections>
+                                    <action selector="scissorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yf1-cN-62b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your weapon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYV-jv-L3u">
+                                <rect key="frame" x="10" y="361" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result will be revealed soon..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgY-mJ-4Gq">
+                                <rect key="frame" x="10" y="595" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-gJ-bHD">
+                                <rect key="frame" x="162" y="432.5" width="90" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="hRc-GD-EUZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Paper"/>
+                                <connections>
+                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJX-Zp-TXM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8va-YR-LzN" firstAttribute="leading" secondItem="Ef0-gJ-bHD" secondAttribute="trailing" constant="42" id="8eU-gm-I6p"/>
+                            <constraint firstItem="Ef0-gJ-bHD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="An4-fo-vFe"/>
+                            <constraint firstItem="cgY-mJ-4Gq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cyf-YM-B9r"/>
+                            <constraint firstItem="8va-YR-LzN" firstAttribute="width" secondItem="Ef0-gJ-bHD" secondAttribute="width" id="KEe-qa-z4X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TYV-jv-L3u" secondAttribute="trailing" constant="10" id="Oj5-GP-GiL"/>
+                            <constraint firstItem="WbK-5n-8E0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="QS1-WK-aG1"/>
+                            <constraint firstItem="Ef0-gJ-bHD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wgu-60-TwD"/>
+                            <constraint firstItem="TYV-jv-L3u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Znf-9P-YVZ"/>
+                            <constraint firstItem="WbK-5n-8E0" firstAttribute="top" secondItem="TYV-jv-L3u" secondAttribute="bottom" constant="50.5" id="aJ6-37-e2V"/>
+                            <constraint firstItem="WbK-5n-8E0" firstAttribute="width" secondItem="Ef0-gJ-bHD" secondAttribute="width" id="eP5-qP-fWD"/>
+                            <constraint firstItem="Ef0-gJ-bHD" firstAttribute="leading" secondItem="WbK-5n-8E0" secondAttribute="trailing" constant="42" id="lVY-sK-nEz"/>
+                            <constraint firstItem="8va-YR-LzN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nwY-Yk-PbV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cgY-mJ-4Gq" secondAttribute="trailing" constant="10" id="oKm-3l-Dbj"/>
+                            <constraint firstItem="cgY-mJ-4Gq" firstAttribute="top" secondItem="WbK-5n-8E0" secondAttribute="bottom" constant="131.5" id="ou5-1k-Cop"/>
+                            <constraint firstItem="WbK-5n-8E0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qc0-bg-sLL"/>
+                            <constraint firstItem="TYV-jv-L3u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tM8-9z-wpL"/>
+                            <constraint firstItem="cgY-mJ-4Gq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uP4-39-7Gt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8va-YR-LzN" secondAttribute="trailing" constant="30" id="z8E-AY-i9N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseWeaponLabel" destination="TYV-jv-L3u" id="F6j-pq-BC4"/>
+                        <outlet property="resultLabel" destination="cgY-mJ-4Gq" id="edi-VS-cTq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
